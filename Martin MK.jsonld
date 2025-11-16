@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "Martin MK",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "",
+      "sha256": "c9108fc26adfc48dc47632206235fb27d6255a5520e5f1fa0fceaa41c9a0aa28"
+    },
+    "motivations": "I want to be a DRep to help bring clear, responsible, and inclusive decision-making to Cardano. My experience at the Constitutional Convention in Nairobi, my work as an SPO, and my involvement in Project Catalyst have given me a solid understanding of governance from both the technical and community sides. I’ve also spent years onboarding and supporting builders in Goma and Nyiragongo, which helps me represent real community needs. I want to use this experience to contribute to a stronger and more engaged governance culture.",
+    "objectives": "As a DRep, I believe that governance must remain inclusive, transparent, and anchored in the realities of the people who use and build on Cardano. Coming from a region where blockchain adoption is growing fast, I’ve seen how meaningful representation can open doors for entire communities. My conviction is that every voice — especially those outside traditional tech centers — should shape the future of this ecosystem.\n\nWhat I want to achieve as a DRep:\n\nStrengthen informed participation by helping users understand proposals, trade-offs, and long-term implications, so their votes reflect real understanding rather than noise.\n\nBring community realities into governance, using my on-the-ground experience onboarding hundreds of young people and coordinating hubs in Goma and Nyiragongo to provide feedback that reflects actual needs and constraints.\n\nPromote responsible and consistent governance, ensuring that decisions focus on sustainability, decentralization, and long-term value creation.\n\n",
+    "paymentAddress": "addr_test1qzxr3eh6uvc5caflfjf2z44xkdn83374nsn5mr342dar29w48ekqcvd9dxks4dxxuqdqnajqg7nmld4sj3e2au8pqhaqkk9v66",
+    "qualifications": "Here is a concise list you can use:\n\nStrong understanding of Cardano governance and the Catalyst process\n\nExperience participating in previous Catalyst funds\n\nAbility to review proposals critically and objectively\n\nKnowledge of blockchain fundamentals and Web3 ecosystems\n\nClear communication skills for representing voter interests\n\nCommitment to transparency, accountability, and ethical decision-making",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "X account",
+        "uri": "https://x.com/martin_musagara"
+      },
+      {
+        "@type": "Identity",
+        "label": "https://x.com/martin_musagara",
+        "uri": "https://x.com/martin_musagara"
+      }
+    ]
+  }
+}
